@@ -1,0 +1,188 @@
+/* Estilo global para el cuerpo del documento */
+body {
+    margin: 0; /* quitamos márgenes por defecto */
+    padding: 0; /* quitamos padding por defecto */
+    background-color: #111; /* fondo negro */
+    color: #eee; /* texto gris claro para buen contraste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* tipografía legible */
+    display: flex; /* usamos flexbox para centrar */
+    flex-direction: column; /* dirección vertical */
+    align-items: center; /* centrado horizontal */
+    justify-content: center; /* centrado vertical */
+    min-height: 100vh; /* altura mínima pantalla completa */
+}
+
+/* Estilo para el título principal */
+h1 {
+    font-size: 2em; /* tamaño de fuente grande */
+    margin-bottom: 20px; /* espacio debajo del título */
+}
+
+/* Lista UL como contenedor vertical de botones */
+ul {
+    list-style: none; /* sin viñetas */
+    padding: 0; /* sin padding interno */
+    margin: 0; /* sin margen externo */
+    display: flex; /* usamos flexbox también aquí */
+    flex-direction: column; /* dirección vertical */
+    gap: 15px; /* espacio entre botones */
+}
+
+/* Cada ítem de lista actúa como botón */
+ul li a {
+    display: block; /* todo el área clickeable */
+    padding: 15px 30px; /* espacio interno */
+    background-color: #222; /* fondo gris oscuro */
+    border: 2px solid #444; /* borde gris medio */
+    color: #fff; /* texto blanco */
+    text-decoration: none; /* sin subrayado */
+    text-align: center; /* centrado del texto */
+    border-radius: 8px; /* bordes redondeados */
+    transition: all 0.3s ease; /* transición suave */
+    font-size: 1.1em; /* tamaño de fuente un poco más grande */
+}
+
+/* Efecto hover: al pasar el mouse */
+ul li a:hover {
+    background-color: #444; /* fondo un poco más claro */
+    border-color: #777; /* borde más claro */
+    transform: scale(1.03); /* agrandar un poco */
+
+}
+
+
+
+/* Botón de inicio loco */
+#btn-inicio {
+    margin-bottom: 2%;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animación de colores y forma */
+@keyframes psicodelico-total {
+    0% {
+        background-color: #ff0000; 
+        color: #00ff00; 
+        border-radius: 10% 50% 30% 70% / 60% 30% 70% 40%;
+        transform: rotate(0deg) scale(1);
+    }
+    20% {
+        background-color: #00ffff; 
+        color: #ff00ff; 
+        border-radius: 50% 20% 60% 30% / 30% 70% 20% 60%;
+        transform: rotate(10deg) scale(1.1);
+    }
+    40% {
+        background-color: #ffff00; 
+        color: #0000ff; 
+        border-radius: 70% 40% 20% 60% / 50% 60% 30% 40%;
+        transform: rotate(-10deg) scale(0.9);
+    }
+    60% {
+        background-color: #ff00ff; 
+        color: #00ffff; 
+        border-radius: 20% 60% 50% 30% / 70% 20% 60% 50%;
+        transform: rotate(15deg) scale(1.2);
+    }
+    80% {
+        background-color: #00ff00; 
+        color: #ff0000; 
+        border-radius: 60% 30% 70% 20% / 40% 60% 30% 70%;
+        transform: rotate(-15deg) scale(0.8);
+    }
+    100% {
+        background-color: #ff0000; 
+        color: #00ff00; 
+        border-radius: 10% 50% 30% 70% / 60% 30% 70% 40%;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+/* Hover activa la animación */
+#btn-inicio:hover {
+    animation: psicodelico-total 3s infinite alternate;
+}
+
+
+
+
+
+
+
+/* Vista de clientes */
+
+/* Contenedor específico para la vista de clientes */
+.container-clientes {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: #111; /* más oscuro que el fondo común */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+/* Título principal */
+.container-clientes h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Botonera horizontal */
+.botonera-clientes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Cabecera de tabla */
+thead {
+    background-color: #333;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-top: 1px solid #444;
+}
+
+/* Links de acciones */
+td a {
+    color: #00cccc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Fila sin datos */
+.sin-clientes {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    font-style: italic;
+}
