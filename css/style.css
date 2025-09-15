@@ -186,3 +186,68 @@ td a:hover {
     color: #aaa;
     font-style: italic;
 }
+/* Modal - overlay */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6); /* más oscuro, consistente con fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    display: none; /* oculto por defecto */
+}
+
+/* Contenedor del modal */
+.modal {
+    background-color: #1a1a1a; /* fondo oscuro */
+    color: #eee; /* texto claro */
+    padding: 2rem;
+    border-radius: 12px;
+    width: 450px;
+    max-width: calc(100% - 2rem);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Campos del formulario */
+.campo-form {
+    margin-bottom: 1rem;
+}
+.campo-form label {
+    display:block;
+    margin-bottom:0.5rem;
+    font-weight:600;
+}
+.campo-form input, 
+.campo-form textarea {
+    width:100%;
+    padding:0.5rem;
+    border:1px solid #444; /* borde más oscuro */
+    border-radius:6px;
+    background:#111; /* fondo consistente con la página */
+    color:#eee; /* texto claro */
+}
+
+/* Botones */
+.boton {
+    padding:0.5rem 1rem;
+    border:none;
+    background:#222; /* fondo oscuro como tus otros botones */
+    color:#fff;
+    border-radius:6px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+.boton:hover {
+    background:#2b8aef; /* hover como tus botones en lista */
+}
+
+/* Botones de edición en tabla */
+.btn-editar {
+    margin-right:0.5rem;
+    background:#2b8aef;
+    color:#fff;
+    border-radius:6px;
+    padding:0.4rem 0.6rem;
+    cursor:pointer;
+}

@@ -28,10 +28,10 @@ require_once __DIR__ . '/includes/header.php';                // Incluye el enca
 <ul>                                                          <!-- Lista desordenada con enlaces de navegación -->
     <li><a href="Views/Clientes/index.php">Gestión de Clientes</a></li>              <!-- Enlace a la gestión de clientes -->
     <li><a href="Views/Pedidos/index.php">Gestión de Pedidos</a></li>              <!-- Enlace a la gestión de pedidos -->
-    <li><a href="Views/pagos/listar.php">Gestión de Pagos</a></li>                  <!-- Enlace a la gestión de pagos -->
-    <li><a href="Views/gastos/listar.php">Control de Gastos</a></li>                <!-- Enlace al control de gastos -->
+    <li><a href="Views/pagos/listar.php">Gestión de Pagos (borrar por que es lo mismo  un "pago" un "gasto")</a></li>                  <!-- Enlace a la gestión de pagos -->
+    <li><a href="Views/gastos/index.php">Gastos</a></li>                <!-- Enlace al control de gastos -->
     <li><a href="Views/inventario/index.php">Inventario</a></li>                   <!-- Enlace al inventario -->
-    <li><a href="Views/cierres_diarios/listar.php">Cierres Diarios</a></li>         <!-- Enlace al cierre diario de caja -->
+    <li><a href="Views/CierresDiarios/index.php">Cierres Diarios</a></li>         <!-- Enlace al cierre diario de caja -->
 </ul>
 
 <?php
